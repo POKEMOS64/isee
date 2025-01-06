@@ -1,0 +1,169 @@
+// Главный контейнер
+// Debag
+// .container
+//   background: #4e7cfabb
+
+// .wrap
+//   background: #d6d6d6b5
+//   &.static
+//     position: absolute
+//     z-index: 1
+// .col
+
+//   &.xl1
+//     &.static
+//       width: calc( (#{$one} * 1) - #{$gutter} )
+//       height: 100vh
+
+//       background: #ffffff55 !important
+// Debag
+
+@use "sass:math"
+$monitor: 1920px
+$laptop: 1366px
+$minmonitor: 1280px
+$tab: 1024px
+$tabplan: 768px
+$iphone: 360px
+$colums: 12
+$one: calc(100% /$colums)
+$gutter: calc($one /5)
+$gutterline: calc($one /5)
+  
+.container
+  width: 100%
+  max-width: 1170px
+  min-width: 360px
+  margin: 0 auto
+  position: relative
+  &.max
+    max-width: 1920px
+
+.wrap,.case
+  width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  z-index: 101 !important
+  .col
+    width: 100%
+    transition: all 1s
+    margin: 0 calc( $gutter / 2)
+    @media ( min-width: $iphone) and ( max-width: $tabplan)
+      &.s0
+        display: none
+      &.s1
+        width: calc( (#{$one} * 1) - #{$gutterline})
+      &.s2
+        width: calc( (#{$one} * 2) - #{$gutterline})
+      &.s3
+        width: calc( (#{$one} * 3) - #{$gutterline})
+      &.s4
+        width: calc( (#{$one} * 4) - #{$gutterline})
+      &.s5
+        width: calc( (#{$one} * 5) - #{$gutterline})
+      &.s6
+        width: calc( (#{$one} * 6) - #{$gutterline})
+      &.s7
+        width: calc( (#{$one} * 7) - #{$gutterline})
+      &.s8
+        width: calc( (#{$one} * 8) - #{$gutterline})
+      &.s9
+        width: calc( (#{$one} * 9) - #{$gutterline})
+      &.s10
+        width: calc( (#{$one} * 10) - #{$gutterline})
+      &.s11
+        width: calc( (#{$one} * 11) - #{$gutterline})
+      &.s12
+        width: calc( (#{$one} * 12) - #{$gutterline})
+    @media ( min-width: $tabplan ) and ( max-width: $tab)
+      &.m0
+        display: none
+      &.m1
+        width: calc( (#{$one} * 1) - #{$gutter})
+      &.m2
+        width: calc( (#{$one} * 2) - #{$gutter})
+      &.m3
+        width: calc( (#{$one} * 3) - #{$gutter})
+      &.m4
+        width: calc( (#{$one} * 4) - #{$gutter})
+      &.m5
+        width: calc( (#{$one} * 5) - #{$gutter})
+      &.m6
+        width: calc( (#{$one} * 6) - #{$gutter})
+      &.m7
+        width: calc( (#{$one} * 7) - #{$gutter})
+      &.m8
+        width: calc( (#{$one} * 8) - #{$gutter})
+      &.m9
+        width: calc( (#{$one} * 9) - #{$gutter})
+      &.m10
+        width: calc( (#{$one} * 10) - #{$gutter})
+      &.m11
+        width: calc( (#{$one} * 11) - #{$gutter})
+      &.m12
+        width: calc( (#{$one} * 12) - #{$gutter})
+    @media screen and ( max-width: 3000px )
+      &.xl0
+        display: none
+      &.xl1
+        width: calc( (#{$one} * 1) - #{$gutter})
+        // background: #88747491
+      &.xl2
+        width: calc( (#{$one} * 2) - #{$gutter})
+        // background: #6b6b6b91
+      &.xl3
+        width: calc( (#{$one} * 3) - #{$gutter})
+        // background: #72505091
+      &.xl4
+        width: calc( (#{$one} * 4) - #{$gutter})
+        // background: #733e3e91
+      &.xl5
+        width: calc( (#{$one} * 5) - #{$gutter})
+        // background: #3e477391
+      &.xl6
+        width: calc( (#{$one} * 6) - #{$gutter})
+        // background: #266d8391
+      &.xl7
+        width: calc( (#{$one} * 7) - #{$gutter})
+        // background: #26834b91
+      &.xl8
+        width: calc( (#{$one} * 8) - #{$gutter})
+        // background: #50832691
+      &.xl9
+        width: calc( (#{$one} * 9) - #{$gutter})
+        // background: #7b832691
+      &.xl10
+        width: calc( (#{$one} * 10) - #{$gutter})
+        // background: #29268391
+      &.xl11
+        width: calc( (#{$one} * 11) - #{$gutter})
+        // background: #83267d91
+      &.xl12
+        width: calc( (#{$one} * 12) - #{$gutter})
+        // background: #83264b91
+      &.left-x1
+        margin-left: calc( (#{$one} * 1) + #{$gutter} / 2)
+      &.left-x2
+        margin-left: calc( (#{$one} * 2) + #{$gutter} / 2)
+      &.left-x3
+        margin-left: calc( (#{$one} * 3) + #{$gutter} / 2)
+      &.left-x4
+        margin-left: calc( (#{$one} * 4) + #{$gutter} / 2)
+      &.left-x5
+        margin-left: calc( (#{$one} * 5) + #{$gutter} / 2)
+      &.left-x6
+        margin-left: calc( (#{$one} * 6) + #{$gutter} / 2)
+      &.left-x7
+        margin-left: calc( (#{$one} * 7) + #{$gutter} / 2)
+      &.left-x8
+        margin-left: calc( (#{$one} * 8) + #{$gutter} / 2)
+      &.left-x9
+        margin-left: calc( (#{$one} * 9) + #{$gutter} / 2)
+      &.left-x10
+        margin-left: calc( (#{$one} * 10) + #{$gutter} / 2)
+      &.left-x11
+        margin-left: calc( (#{$one} * 11) + #{$gutter} / 2)
+      &.left-x12
+        margin-left: calc( (#{$one} * 12) + #{$gutter} / 2)
+

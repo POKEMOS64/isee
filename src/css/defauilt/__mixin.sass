@@ -1,0 +1,25 @@
+@use "sass:math"
+$monitor: 1920px
+$laptop: 1366px
+$minmonitor: 1280px
+$tab: 1024px
+$tabplan: 768px
+$iphone: 360px
+
+=bg($img,$for: webp)
+  background-image: url('/img/#{$img}.#{$for}')
+
+=clear
+  padding-top: 3rem
+  padding-bottom: 0rem
+
+//Размер колонок
+$colums: 12
+$one: calc(100% /$colums)
+$gutter: calc($one /5)
+$gutterline: calc($gutter * 2)
+ 
+=flex($align: stretch, $just: center)
+  display: flex
+  align-items: #{$align}
+  justify-content: #{$just}

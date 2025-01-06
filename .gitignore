@@ -5,7 +5,7 @@ __pycache__/
 **/__pycache__/
 **/**/*.pyc
 *.vscode
-
+*node_modules
 
 # Окружение 
 server/
@@ -176,3 +176,4 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+node_modules

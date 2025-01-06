@@ -1,0 +1,261 @@
+.container
+  font-family: $font2
+  width: 100%
+  min-width: 360px
+  max-width: 1200px
+  margin: 0 auto
+  z-index: 9
+  position: relative
+  &.max
+    max-width: 1920px
+    &.h_gidf
+      // padding-bottom: 15rem
+      @media screen and ( max-width: 760px )
+        padding-bottom: 20rem
+    &.fixed-up
+      padding-bottom: 5rem
+        
+.wrap
+  width: 100%
+  min-width: 360px
+  max-width: inherit
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  
+  margin-bottom: .2rem
+  padding-right: calc( #{$gutter} * 2 )
+  padding-left:  calc( #{$gutter} * 2 )
+  overflow: hidden
+  @media screen and ( max-width: 990px )
+    padding: 0
+
+    
+  &.center
+    align-items: center
+  &>div
+    padding: 0 .5rem
+    position: relative
+    margin: calc( $gutter / 2)
+    transition: top .2s ease-in-out, font-size .3s ease-in-out
+    .wrap
+      padding-right: calc( #{$gutter} * 1 )
+      padding-left:  calc( #{$gutter} * 1 )
+  @media ( min-width: $iphone) and ( max-width: $tabplan)
+    .col
+      width: 100%
+      
+      &.s0
+        display: none
+      &.s1
+        width: calc( (#{$one} * 1) - #{$gutterline})
+      &.s2
+        width: calc( (#{$one} * 2) - #{$gutterline})
+      &.s3
+        width: calc( (#{$one} * 3) - #{$gutterline})
+      &.s4
+        width: calc( (#{$one} * 4) - #{$gutterline})
+      &.s5
+        width: calc( (#{$one} * 5) - #{$gutterline})
+      &.s6
+        width: calc( (#{$one} * 6) - #{$gutterline})
+      &.s7
+        width: calc( (#{$one} * 7) - #{$gutterline})
+      &.s8
+        width: calc( (#{$one} * 8) - #{$gutterline})
+      &.s9
+        width: calc( (#{$one} * 9) - #{$gutterline})
+      &.s10
+        width: calc( (#{$one} * 10) - #{$gutterline})
+      &.s11
+        width: calc( (#{$one} * 11) - #{$gutterline})
+      &.s12
+        width: calc( (#{$one} * 12) - #{$gutterline})
+      &.lef-s0
+        margin-left: 0
+      &.lef-s1
+        margin-left: calc( (#{$one} * 1) + (#{$gutterline} * 1))
+      &.lef-s2
+        margin-left: calc( (#{$one} * 2) + #{$gutterline})
+      &.lef-s3
+        margin-left: calc( (#{$one} * 3) + #{$gutterline})
+      &.lef-s4
+        margin-left: calc( (#{$one} * 4) + #{$gutterline})
+      &.lef-s5
+        margin-left: calc( (#{$one} * 5) + #{$gutterline})
+      &.lef-s6
+        margin-left: calc( (#{$one} * 6) + #{$gutterline})
+      &.lef-s7
+        margin-left: calc( (#{$one} * 7) + #{$gutterline})
+      &.lef-s8
+        margin-left: calc( (#{$one} * 8) + #{$gutterline})
+      &.lef-s9
+        margin-left: calc( (#{$one} * 9) + #{$gutterline})
+      &.lef-s10
+        margin-left: calc( (#{$one} * 10) + #{$gutterline})
+      &.lef-s11
+        margin-left: calc( (#{$one} * 11) + #{$gutterline})
+      &.lef-s12
+        margin-left: calc( (#{$one} * 12) + #{$gutterline})
+  @media ( max-width: $tab )
+    .col
+      &.m0
+        display: none
+      &.m1
+        width: calc( (#{$one} * 1) - #{$gutter})
+      &.m2
+        width: calc( (#{$one} * 2) - #{$gutter})
+      &.m3
+        width: calc( (#{$one} * 3) - #{$gutter})
+      &.m4
+        width: calc( (#{$one} * 4) - #{$gutter})
+      &.m5
+        width: calc( (#{$one} * 5) - #{$gutter})
+      &.m6
+        width: calc( (#{$one} * 6) - #{$gutter})
+      &.m7
+        width: calc( (#{$one} * 7) - #{$gutter})
+      &.m8
+        width: calc( (#{$one} * 8) - #{$gutter})
+      &.m9
+        width: calc( (#{$one} * 9) - #{$gutter})
+      &.m10
+        width: calc( (#{$one} * 10) - #{$gutter})
+      &.m11
+        width: calc( (#{$one} * 11) - #{$gutter})
+      &.m12
+        width: calc( (#{$one} * 12) - #{$gutter})
+      &.lef-m0
+        @media screen and ( max-width: $tab )
+          margin-left: 0 !important
+          
+      &.lef-m1
+        margin-left: calc( (#{$one} * 1) + (#{$gutter} * 1))
+      &.lef-m2
+        margin-left: calc( (#{$one} * 2) + #{$gutter})
+      &.lef-m3
+        margin-left: calc( (#{$one} * 3) + #{$gutter})
+      &.lef-m4
+        margin-left: calc( (#{$one} * 4) + #{$gutter})
+      &.lef-m5
+        margin-left: calc( (#{$one} * 5) + #{$gutter})
+      &.lef-m6
+        margin-left: calc( (#{$one} * 6) + #{$gutter})
+      &.lef-m7
+        margin-left: calc( (#{$one} * 7) + #{$gutter})
+      &.lef-m8
+        margin-left: calc( (#{$one} * 8) + #{$gutter})
+      &.lef-m9
+        margin-left: calc( (#{$one} * 9) + #{$gutter})
+      &.lef-m10
+        margin-left: calc( (#{$one} * 10) + #{$gutter})
+      &.lef-m11
+        margin-left: calc( (#{$one} * 11) + #{$gutter})
+      &.lef-m12
+        margin-left: calc( (#{$one} * 12) + #{$gutter})
+  @media ( max-width: $monitor)
+    .col
+      &.l0
+        display: none
+      &.l1
+        width: calc( (#{$one} * 1) - #{$gutterline})
+      &.l2
+        width: calc( (#{$one} * 2) - #{$gutterline})
+      &.l3
+        width: calc( (#{$one} * 3) - #{$gutterline})
+      &.l4
+        width: calc( (#{$one} * 4) - #{$gutterline})
+      &.l5
+        width: calc( (#{$one} * 5) - #{$gutterline})
+      &.l6
+        width: calc( (#{$one} * 6) - #{$gutterline})
+      &.l7
+        width: calc( (#{$one} * 7) - #{$gutterline})
+      &.l8
+        width: calc( (#{$one} * 8) - #{$gutterline})
+      &.l9
+        width: calc( (#{$one} * 9) - #{$gutterline})
+      &.l10
+        width: calc( (#{$one} * 10) - #{$gutterline})
+      &.l11
+        width: calc( (#{$one} * 11) - #{$gutterline})
+      &.l12
+        width: calc( (#{$one} * 12) - #{$gutterline})
+      &.lef-l1
+        margin-left: calc( (#{$one} * 1) + (#{$gutterline} * 1))
+      &.lef-l2
+        margin-left: calc( (#{$one} * 2) + #{$gutterline})
+      &.lef-l3
+        margin-left: calc( (#{$one} * 3) + #{$gutterline})
+      &.lef-l4
+        margin-left: calc( (#{$one} * 4) + #{$gutterline})
+      &.lef-l5
+        margin-left: calc( (#{$one} * 5) + #{$gutterline})
+      &.lef-l6
+        margin-left: calc( (#{$one} * 6) + #{$gutterline})
+      &.lef-l7
+        margin-left: calc( (#{$one} * 7) + #{$gutterline})
+      &.lef-l8
+        margin-left: calc( (#{$one} * 8) + #{$gutterline})
+      &.lef-l9
+        margin-left: calc( (#{$one} * 9) + #{$gutterline})
+      &.lef-l0
+        margin-left: calc( (#{$one} * 10) + #{$gutterline})
+      &.lef-l11
+        margin-left: calc( (#{$one} * 11) + #{$gutterline})
+      &.lef-l12
+        margin-left: calc( (#{$one} * 12) + #{$gutterline})
+  @media screen and ( max-width: 3000px )
+    .col
+      
+      &.xl0
+        display: none
+      &.xl1
+        width: calc( (#{$one} * 1) - #{$gutter})
+      &.xl2
+        width: calc( (#{$one} * 2) - #{$gutter})
+      &.xl3
+        width: calc( (#{$one} * 3) - #{$gutter})
+        // вотчина - $gutter
+      &.xl4
+        width: calc( (#{$one} * 4) - #{$gutter})
+      &.xl5
+        width: calc( (#{$one} * 5) - #{$gutter})
+      &.xl6
+        width: calc( (#{$one} * 6) - #{$gutter})
+      &.xl7
+        width: calc( (#{$one} * 7) - #{$gutter})
+      &.xl8
+        width: calc( (#{$one} * 8) - #{$gutter})
+      &.xl9
+        width: calc( (#{$one} * 9) - #{$gutter})
+      &.xl10
+        width: calc( (#{$one} * 10) - #{$gutter})
+      &.xl11
+        width: calc( (#{$one} * 11) - #{$gutter})
+      &.xl12
+        width: calc( (#{$one} * 12) - #{$gutter})
+      &.lef-xl1
+        margin-left: calc( (#{$one} * 1) + (#{$gutter} * 1))
+      &.lef-xl2
+        margin-left: calc( (#{$one} * 2) + #{$gutter})
+      &.lef-xl3
+        margin-left: calc( (#{$one} * 3) + #{$gutter})
+      &.lef-xl4
+        margin-left: calc( (#{$one} * 4) + #{$gutter})
+      &.lef-xl5
+        margin-left: calc( (#{$one} * 5) + #{$gutter})
+      &.lef-xl6
+        margin-left: calc( (#{$one} * 6) + #{$gutter})
+      &.lef-xl7
+        margin-left: calc( (#{$one} * 7) + #{$gutter})
+      &.lef-xl8
+        margin-left: calc( (#{$one} * 8) + #{$gutter})
+      &.lef-xl9
+        margin-left: calc( (#{$one} * 9) + #{$gutter})
+      &.lef-xl10
+        margin-left: calc( (#{$one} * 10) + #{$gutter})
+      &.lef-xl11
+        margin-left: calc( (#{$one} * 11) + #{$gutter})
+      &.lef-xl12
+        margin-left: calc( (#{$one} * 12) + #{$gutter})

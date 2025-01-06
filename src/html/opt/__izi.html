@@ -1,0 +1,42 @@
+<div class="izi" id="modal" data-iziModal-fullscreen="true" data-iziModal-title="Титульник"
+  data-iziModal-subtitle="Пусто" data-iziModal-icon="icon-home">
+
+</div>
+
+<div class="izi forms_wwww" id="modal2" data-iziModal-fullscreen="true" data-iziModal-title="Форма"
+  data-iziModal-subtitle="Подпись" data-iziModal-icon="icon-home">
+  <div class="izi__section">
+    <form action="">
+
+
+      <!-- input -->
+      <div class="text-field">
+        <label class="text-field__label" for="login">Ваше имя</label>
+        <input class="text-field__input" type="text" name="login" id="login" placeholder="Login" value="itchief">
+      </div>
+      <!-- //////// input -->
+      <!-- input  почта-->
+      <div class="text-field">
+        <label class="text-field__label" for="login">Почта</label>
+        <input class="text-field__input" type="email" name="login" id="mail" placeholder="mail@mail.ru" value=""
+          pattern=".+@example\.com" size="30" maxlength="32" title="Пожалуйста введите действующий адрес" required>
+      </div>
+      <!-- //////// input -->
+      <!-- input  телефон-->
+      <div class="text-field">
+        <label class="text-field__label" for="login">Телефон</label>
+        <input class="text-field__input" type="phone" name="login" id="phone" placeholder="Login"
+          value="8 (800) 000- 00-00" required>
+      </div>
+      <!-- //////// input -->
+    </form>
+  </div>
+</div>
+
+<!-- Вызов модалки -->
+<section class="box_d">
+  <a href="#" data-izimodal-open="#modal2" data-izimodal-transitionin="fadeInDown">Modal3</a>
+  <!-- Вызов модалки -->
+  <button data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Open</button>
+
+</section>
